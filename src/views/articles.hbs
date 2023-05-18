@@ -1,0 +1,16 @@
+<h2 class="art-txt">&nbsp;&nbsp;<em class="iconfont icon-wifi "></em> <span>最新文章</span></h2>
+{{#each list}}
+<div class="art-model">
+    <h3><a href="javascript:;">{{title}}</a></h3>
+    <p class="dateview"><span>发布时间：{{date}}</span> <span>作者：{{writer.nickname}}</span></p>
+    <dl class="img-txt">
+        <dt>
+            <img src="{{cover}}" alt="{{title}}" title="{{title}}">
+        </dt>
+        <dd>
+            <p class="deatil">{{content}}</p>
+            <a href="javascript:;" class="btn  c-fff" data-router="article" data-id="{{_id}}">查看全文</a>
+        </dd>
+    </dl>
+</div>
+{{/each}}

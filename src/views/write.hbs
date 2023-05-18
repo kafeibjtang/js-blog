@@ -1,0 +1,36 @@
+<div class="section-write">
+    <div class="frame write">
+        <div class="record" data-modal="sign">登录</div>
+        <div class="arc"></div>
+
+        <div class="editor-box box">
+            <div class="editor-title">
+                <h4>文章标题：</h4>
+                <input type="text" placeholder="记得给文章添加标题哦。" id="blog-write-title">
+            </div>
+            <div class="classify">
+                <h4>分类：</h4>
+                <ul class="classify-column">
+                    {{#each list}}
+                    <li data-column="{{_id}}">
+                        {{name}}
+                    </li>
+                    {{/each}}
+                </ul>
+
+            </div>
+            <div class="editor-content"></div>
+
+        </div>
+
+        <div class="write-btn">
+            <div class="write-ico">
+                <a><i class="iconfont icon-xiaolian" data-icon="xiaolian"></i></a>
+                <a><i class="iconfont icon-tupian" data-icon="tupian"></i></a>
+            </div>
+            <div>
+                <a><span class="oButton" data-down="comment" data-router="write">提交</span></a>
+            </div>
+        </div>
+    </div>
+</div>

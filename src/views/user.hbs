@@ -1,0 +1,12 @@
+{{#if isLogin}}
+<div class="nick-name">
+    <p>欢迎你 {{nickname}}</p>
+    <div class="drop-down">
+        <p data-down="info">个人中心</p>
+        <p data-down="logout">退出登录</p>
+    </div>
+</div>
+{{else}}
+<div class="but" id="logins" data-modal="login">注册</div>
+<div class="but" id="signs" data-modal="sign">登录</div>
+{{/if}}
